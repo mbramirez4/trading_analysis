@@ -37,3 +37,14 @@ On the technical side, I would also need to get up to speed with the specific to
     I used most of the time in the assessment to build these datasets which would help me reach the final solution.
 
     6. I created a rule based on the history for each trader: I used a typical definition of anomaly: mean(u) + n * std(u). The mean and std were based on days in which the trader lose money. mean and std were based on their own data (not shared data). The data can be sorted based on how far they are from their mean to get the ones that are having the worse day
+
+## What I'd have done with extra time
+If I would have more time I would:
+1) Look to gain deeper understanding of the historical behavior of the traders. I couldn't really analyze it as most of my time went in trying to understand the raw data and building the datasets I'd need to analyze.
+
+2) Propose a better rule: 
+    - Finding how many stds is the data from its mean has the coldstart problem (what to do with a trader that doesn't have enough trading sessions) 
+    - This is also biased to only use days in which the trader didn't get profit, but a bad day for a trader can also mean less profits than usual.
+    - Look if the instrument traded is somehow significant for the rule.
+
+3) Answer the other questions asked
