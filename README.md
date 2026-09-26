@@ -44,7 +44,10 @@ If I would have more time I would:
 
 2) Propose a better rule: 
     - Finding how many stds is the data from its mean has the coldstart problem (what to do with a trader that doesn't have enough trading sessions) 
+    - Include the number of operations in the analysis. Right now it is based solely on the gross losses.
     - This is also biased to only use days in which the trader didn't get profit, but a bad day for a trader can also mean less profits than usual.
     - Look if the instrument traded is somehow significant for the rule.
 
-3) Answer the other questions asked
+3) Validate my analysis: Although I don't have the true labels, I could use the labels I defined for the whole session and check if it is consistent or flag someone amidst the day. Right now my rule it doesn't fully answer the question as it only reviews "finished" sessions. Since the question is to check if someone is **having** a bad session, I'd like to cut a "known session" at several moments of it and check if my rule flags those traders that would end up being flagged as "had a bad day".
+
+4) Answer the other questions asked
